@@ -15,33 +15,32 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Chirpy                          # the main title
+title: Xin                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Knowledge Archive   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Interested in computer science, math and physics,
+  and their connections.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://xin-0.github.io'
 
-author: your_full_name                  # change to your full name
+author: Xin Tong                  # change to your full name
 
 github:
-  username: github_username             # change to your github username
+  username: xin-0             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: Xin20514735            # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: Xin Tong                  # it will shows as the copyright owner in Footer
+  email: xtong2@hotmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/Xin20514735      # change to your twitter homepage
+    - https://github.com/xin-0       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo Theme Fuji</title>
+    <title>Posts on Hilbert Spacecraft</title>
     <link>https://xin-0.github.io/post/</link>
-    <description>Recent content in Posts on Hugo Theme Fuji</description>
+    <description>Recent content in Posts on Hilbert Spacecraft</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Aug 2022 15:07:38 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Aug 2022 19:09:20 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MyPost</title>
-      <link>https://xin-0.github.io/post/mypost/</link>
-      <pubDate>Sun, 14 Aug 2022 15:07:38 +0800</pubDate>
+      <title>Quantum Computation and Information chpater 4 solution </title>
+      <link>https://xin-0.github.io/post/qcqi-solution-ch4/</link>
+      <pubDate>Sun, 14 Aug 2022 19:09:20 +0800</pubDate>
       
-      <guid>https://xin-0.github.io/post/mypost/</guid>
-      <description>int main(){ return 1; } </description>
+      <guid>https://xin-0.github.io/post/qcqi-solution-ch4/</guid>
+      <description>Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp;amp; Isaac L. Chuang, chapter 4.
+Currently under construction. Obviously won&amp;rsquo;t solve them all, but I&amp;rsquo;ll try my best. Open to valuable critics and better solutions.
+Section 4.3 Summary ex 4.20 Since
+$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp;amp; H \\ H &amp;amp; -H \end{bmatrix} $$
+Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
+$$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp;amp; = {1\over2}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;amp;X \end{bmatrix}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix} \\ &amp;amp; = \begin{bmatrix}1&amp;amp;0&amp;amp;0&amp;amp;0 \\ 0&amp;amp;0&amp;amp;0&amp;amp;1 \\ 0&amp;amp;0&amp;amp;1&amp;amp;0 \\ 0&amp;amp;1&amp;amp;0&amp;amp;0\end{bmatrix}\equiv CNOT10 \end{align}$$</description>
     </item>
     
   </channel>

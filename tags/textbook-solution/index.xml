@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hilbert Spacecraft</title>
-    <link>https://xin-0.github.io/</link>
-    <description>Recent content on Hilbert Spacecraft</description>
+    <title>Textbook Solution on Hilbert Spacecraft</title>
+    <link>https://xin-0.github.io/tags/textbook-solution/</link>
+    <description>Recent content in Textbook Solution on Hilbert Spacecraft</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Aug 2022 19:09:20 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Aug 2022 19:09:20 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/tags/textbook-solution/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quantum Computation and Information chpater 4 solution </title>
       <link>https://xin-0.github.io/post/qcqi-solution-ch4/</link>
@@ -19,16 +19,6 @@ Section 4.3 Summary ex 4.20 Since
 $$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp;amp; H \\ H &amp;amp; -H \end{bmatrix} $$
 Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
 $$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp;amp; = {1\over2}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;amp;X \end{bmatrix}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix} \\ &amp;amp; = \begin{bmatrix}1&amp;amp;0&amp;amp;0&amp;amp;0 \\ 0&amp;amp;0&amp;amp;0&amp;amp;1 \\ 0&amp;amp;0&amp;amp;1&amp;amp;0 \\ 0&amp;amp;1&amp;amp;0&amp;amp;0\end{bmatrix}\equiv CNOT10 \end{align}$$</description>
-    </item>
-    
-    <item>
-      <title>About This Blog</title>
-      <link>https://xin-0.github.io/about/</link>
-      <pubDate>Sun, 14 Aug 2022 16:53:23 +0800</pubDate>
-      
-      <guid>https://xin-0.github.io/about/</guid>
-      <description>This a site for sharing my personal findings and opinions or organizing my knowledge through the journey guided by curiosity. My main interests reside in interdisciplinary studies among mahtematiccs, physics and computer science. The topics that will be covered include but are not limited to:
-Quantum Computation Quantum Information Quantum Algorithm and Complexity Analysis </description>
     </item>
     
   </channel>

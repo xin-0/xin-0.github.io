@@ -16,23 +16,21 @@
 
 
 
-<title>Posts - Hugo Theme Fuji</title>
+<title>Posts - Hilbert Spacecraft</title>
 
 
-<meta name="author" content="DSRKafuU" />
+<meta name="author" content="Xin Tong" />
 
 
-<meta name="description" content="A minimal Hugo theme with nice theme color." />
 
-
-<link rel="alternate" type="application/rss+xml" href="https://xin-0.github.io/post/index.xml" title="Hugo Theme Fuji" />
+<link rel="alternate" type="application/rss+xml" href="https://xin-0.github.io/post/index.xml" title="Hilbert Spacecraft" />
 
 <meta property="og:title" content="Posts" />
 <meta name="twitter:title" content="Posts" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xin-0.github.io/post/" /><meta property="og:image" content="https://xin-0.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://xin-0.github.io/img/og.png" /><meta property="og:updated_time" content="2022-08-14T15:07:38+08:00" />
+<meta name="twitter:image" content="https://xin-0.github.io/img/og.png" /><meta property="og:updated_time" content="2022-08-14T19:09:20+08:00" />
 
 
 <style>
@@ -82,9 +80,9 @@
     <header>
     <div class="container-lg clearfix">
         <div class="col-12 header">
-            <a class="title-main" href="https://xin-0.github.io/">Hugo Theme Fuji</a>
+            <a class="title-main" href="https://xin-0.github.io/">Hilbert Spacecraft</a>
             
-            <span class="title-sub">A minimal Hugo theme.</span>
+            <span class="title-sub">On the journey to explore the bizarre and immense space of computation.</span>
             
         </div>
     </div>
@@ -100,18 +98,23 @@
 
 <div class="post">
     <h2 class="post-item post-title">
-        <a href="https://xin-0.github.io/post/mypost/">MyPost</a>
+        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Information chpater 4 solution </a>
     </h2>
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-08-14</span>
 
-<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;5 words</span>
 
-<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;No tag</span>
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/quantum-computing">Quantum Computing</a>&nbsp;<a href="/tags/textbook-solution">Textbook Solution</a>&nbsp;</span>
 
     </div>
     <div class="post-item post-summary markdown-body">
-        int main(){ return 1; } 
+        Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
+Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
+Section 4.3 Summary ex 4.20 Since
+$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
+Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
+$$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align}$$
     </div>
 </div>
 
@@ -127,19 +130,11 @@
             </li>
             
             <li>
-                <a href="/archives/">Archives</a>
-            </li>
-            
-            <li>
                 <a href="/about/">About</a>
             </li>
             
             <li>
                 <a href="/search/">Search</a>
-            </li>
-            
-            <li>
-                <a href="/index.xml">RSS</a>
             </li>
             
         </ul>
@@ -150,15 +145,7 @@
         <ul>
             
             <li>
-                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
-            </li>
-            
-            <li>
-                <a href="https://twitter.com/dsrkafuu" target="_blank"><span>Twitter</span></a>
-            </li>
-            
-            <li>
-                <a href="https://space.bilibili.com/19767474" target="_blank"><span>bilibili</span></a>
+                <a href="mailto:xtong2@hotmail.com" target="_blank"><span>Email</span></a>
             </li>
             
         </ul>
@@ -167,6 +154,14 @@
     <div class="sidebar-item sidebar-tags">
         <h3>Tags</h3>
         <div>
+            
+            <span>
+                <a href="/tags/quantum-computing/">Quantum Computing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/textbook-solution/">Textbook Solution</a>
+            </span>
             
         </div>
     </div>
@@ -199,19 +194,11 @@
             </li>
             
             <li>
-                <a href="/archives/">Archives</a>
-            </li>
-            
-            <li>
                 <a href="/about/">About</a>
             </li>
             
             <li>
                 <a href="/search/">Search</a>
-            </li>
-            
-            <li>
-                <a href="/index.xml">RSS</a>
             </li>
             
         </ul>
@@ -222,15 +209,7 @@
         <ul>
             
             <li>
-                <a href="https://github.com/dsrkafuu" target="_blank"><span>GitHub</span></a>
-            </li>
-            
-            <li>
-                <a href="https://twitter.com/dsrkafuu" target="_blank"><span>Twitter</span></a>
-            </li>
-            
-            <li>
-                <a href="https://space.bilibili.com/19767474" target="_blank"><span>bilibili</span></a>
+                <a href="mailto:xtong2@hotmail.com" target="_blank"><span>Email</span></a>
             </li>
             
         </ul>
@@ -239,6 +218,14 @@
     <div class="sidebar-item sidebar-tags">
         <h3>Tags</h3>
         <div>
+            
+            <span>
+                <a href="/tags/quantum-computing/">Quantum Computing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/textbook-solution/">Textbook Solution</a>
+            </span>
             
         </div>
     </div>
@@ -260,8 +247,8 @@
         <div class="col-12 footer">
             
             <span>&copy; 2020-2022
-                <a href="https://xin-0.github.io/">DSRKafuU</a>
-                 | <a href="https://github.com/dsrkafuu/hugo-theme-fuji">Source code</a> 
+                <a href="https://xin-0.github.io/">Xin Tong</a>
+                 | <a href="https://github.com/xin-0/xin-0.github.io">Source code</a> 
                 | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
                    target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
                                                     target="_blank">Hugo</a> 

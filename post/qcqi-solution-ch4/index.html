@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.101.0" />
+
+
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
+
+
+
+<title>Quantum Computation and Information chpater 4 solution  - Hilbert Spacecraft</title>
+
+
+<meta name="author" content="Xin Tong" />
+
+
+
+<meta name="keywords" content="Quantum Computing, Textbook Solution" />
+
+
+<meta property="og:title" content="Quantum Computation and Information chpater 4 solution " />
+<meta name="twitter:title" content="Quantum Computation and Information chpater 4 solution " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xin-0.github.io/post/qcqi-solution-ch4/" /><meta property="og:description" content="Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
+Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
+Section 4.3 Summary ex 4.20 Since
+$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
+Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
+$$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align}$$" />
+<meta name="twitter:description" content="Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
+Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
+Section 4.3 Summary ex 4.20 Since
+$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
+Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
+$$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align}$$" /><meta property="og:image" content="https://xin-0.github.io/img/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://xin-0.github.io/img/og.png" /><meta property="article:published_time" content="2022-08-14T19:09:20+08:00" /><meta property="article:modified_time" content="2022-08-14T19:09:20+08:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://xin-0.github.io/assets/css/fuji.min.css" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="auto"
+  data-theme-auto='true'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://xin-0.github.io/">Hilbert Spacecraft</a>
+            
+            <span class="title-sub">On the journey to explore the bizarre and immense space of computation.</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Information chpater 4 solution </a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-08-14</span>
+
+
+
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/tags/quantum-computing">Quantum Computing</a>&nbsp;<a href="/tags/textbook-solution">Textbook Solution</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>Personal solution to the book <em>Quantum Computation and Quantum Information</em> by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.</p>
+<p>Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.</p>
+<h1 id="section-43">Section 4.3</h1>
+<h2 id="summary">Summary</h2>
+<h2 id="ex-420">ex 4.20</h2>
+<p>Since</p>
+<p>$$
+H\otimes H = {1\over \sqrt 2}
+\begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix}
+$$</p>
+<p>Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$.
+Also using identity: $HXH=Z$, we have</p>
+<p>$$\begin{align}
+H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; =  {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\
+&amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10
+\end{align}$$</p>
+<h2 id="ex-421">ex 4.21</h2>
+<p>Circuit on the left:
+$$\text{left} : C^2(U)=\begin{bmatrix}I \\ &amp; I \\ &amp; &amp; I \\ &amp; &amp; &amp; U \end{bmatrix}$$
+Using $VV^\dagger=V^\dagger V=I$ and $V^2=U$ we have:</p>
+<p>$$\begin{align}
+\text{right} &amp; : I\otimes \begin{bmatrix}I \\ &amp; V\end{bmatrix} \cdot \begin{bmatrix}I \\ &amp; X\end{bmatrix} \otimes I \cdot I\otimes \begin{bmatrix}I \\ &amp; V^\dagger\end{bmatrix} \cdot \begin{bmatrix}I \\ &amp; X\end{bmatrix} \otimes I \cdot \begin{bmatrix} I \\ &amp; I \\ &amp; &amp; V \\ &amp; &amp; &amp; V \end{bmatrix} \\
+&amp; = \begin{bmatrix} I \\ &amp; I \\ &amp; &amp; I \\ &amp; &amp; &amp; U \end{bmatrix}
+\end{align}$$
+$\text{left = right}$</p>
+<h2 id="ex-422">ex 4.22</h2>
+<h3 id="step1---substitution">step1 - substitution</h3>
+<p>Use decomposition $U=e^{i\alpha}AXBXC$ to replace $c\text{-}V$ and $c\text{-}V^\dagger$ with correponding decompositions.
+Note that, if $V=e^{i\alpha}AXBXC$, then</p>
+<p>$$V^\dagger=(e^{i\alpha}AXBXC)^\dagger=C^\dagger X B^\dagger XA^\dagger e^{-i\alpha}$$</p>
+<p>By substituting $c\text{-}V$ and $c\text{-}V^\dagger$, we have</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_1.jpeg" alt="ex4-22-1" />
+</p>
+<h3 id="step2---simplification">step2 - simplification</h3>
+<p>Use $AA^\dagger=C^\dagger C=I$ to simplify the circuit:</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_2.jpeg" alt="ex4-22-2" />
+</p>
+<p>Furthur simplify the circuit using:</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_3.jpeg" alt="ex4-22-3 @2x" />
+</p>
+<p>and</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_4.jpeg" alt="ex4-22-4 @2x" />
+</p>
+<h3 id="result">Result</h3>
+<p>The final design with 8 one-bit gates and 6 CNOTs for $C^2(U)$ is:</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_5.jpeg" alt="ex4-22-5" />
+</p>
+<h2 id="ex-427">ex 4.27</h2>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-27.jpeg" alt="ex4-27" />
+</p>
+<h1 id="section-45">Section 4.5</h1>
+<h2 id="ex-436">ex 4.36</h2>
+<p>First two qubits represent x and last two qubits represent y</p>
+<p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-36.jpeg" alt="ex4-36" />
+</p>
+<h2 id="ex-440">ex 4.40</h2>
+<p>By definition:</p>
+<p>$$\begin{align}
+E(R_{\hat n}(\alpha),R_{\hat n}(\alpha+\beta))
+&amp; = \max_{\ket\psi}{\Vert{(R_{\hat n}(\alpha)-R_{\hat n}(\alpha+\beta))\ket\psi}\Vert} \\
+&amp; = \max_{\ket\psi}{\Vert{(I-R_{\hat n}(\beta))R_{\hat n}(\alpha)\ket\psi}\Vert} \\
+&amp; = \max_{\ket\phi}{\Vert{(I-R_{\hat n}(\beta))\ket\phi}\Vert}, \quad \ket\phi=R_{\hat n}(\alpha)\ket\psi \\
+\end{align}$$</p>
+<p>Geometrically, the maximum is acheived when $\ket \phi\perp\hat n$, then $R_{\hat n}(\beta)$ is a 2D rotation on a unit circle with angle $\beta/2$. The value of the maximum is the norm of the cord facing the $\beta/2$ angle. Thus:</p>
+<p>$$E(R_{\hat n}(\alpha),R_{\hat n}(\alpha+\beta))=\max_{\ket\phi}{\Vert{(I-R_{\hat n}(\beta))\ket\phi}\Vert}=\vert{1-e^{i\beta/2}}\vert$$</p>
+<h2 id="ex-441">ex 4.41</h2>
+<p>$$\begin{align}
+\ket{00\psi} &amp; \xrightarrow{H} {1\over2}(\ket{00}+\ket{01}+\ket{10}+\ket{11})\ket\psi \\
+&amp; \xrightarrow{Toffoli,S}{1\over2}(\ket{00}S\ket\psi+\ket{01}S\ket\psi+\ket{10}S\ket\psi+\ket{11}SX\ket\psi) \\
+&amp; \qquad= {1\over\sqrt{2}}\ket{0+}S\ket\psi+{1\over2}\ket{10}S\ket\psi+{1\over2}\ket{11}SX\ket\psi \\
+&amp; \xrightarrow{Toffoli} {1\over\sqrt{2}}\ket{0+}S\ket\psi+{1\over2}\ket{10}S\ket\psi+{1\over2}\ket{11}XSX\ket\psi\\
+&amp; \xrightarrow{H} {1\over\sqrt{2}}\ket{+0}S\ket\psi+{1\over2}\ket{-+}S\ket\psi+{1\over2}\ket{&ndash;}XSX\ket\psi
+\end{align}$$</p>
+<p>When measurement on the first two qubits gives $\ket{00}$, the system is in (not normalized):</p>
+<p>$$\ket{\psi&rsquo;}={1\over2}\ket{00}S\ket\psi+{1\over4}\ket{00}S\ket\psi+{1\over4}\ket{00}XSX\ket\psi$$</p>
+<p>$$S=
+\begin{bmatrix}
+1&amp;\\
+&amp;i
+\end{bmatrix},\quad
+XSX=
+\begin{bmatrix}
+i&amp;\\
+&amp;1
+\end{bmatrix}
+$$</p>
+<p>Assume $\ket\psi=\alpha\ket0+\beta\ket1$, then</p>
+<p>$$\begin{align}
+\ket{\psi&rsquo;} &amp; =\ket{00}\left({\frac{3}{4}(\alpha\ket0+i\beta\ket1)+\frac{1}{4}(i\alpha\ket0+\beta\ket1)}\right) \\
+&amp; = \ket{00}\left({\left(\frac{3}{4}+\frac{1}{4}i\right)\alpha\ket0+\left(\frac{1}{4}+\frac{3}{4}i\right)\beta\ket1}\right)
+\end{align}$$</p>
+<p>first remove global phase without normalization</p>
+<p>$$\begin{align}
+\ket{\psi&rsquo;} &amp; = \ket{00}\left({\alpha\ket0}+\left({\frac{3}{5}+\frac{4}{5}i}\right)\beta\ket1\right)
+\end{align}$$</p>
+<p>Which is
+$$\ket{00}R_z(\theta)\ket\psi$$
+with $\cos{\theta}={3/5}$.</p>
+<h2 id="ex-442">ex 4.42</h2>
+<h3 id="part-1">part 1</h3>
+<p>if $\theta$ is a rational multiple of $2\pi$, assume
+$$\theta={n\over m}\cdot2\pi$$
+where $p$ and $q$ are co-prime, then
+$$(e^{i\theta})^m=((3+4i)/5)^m=(e^{i{n\over m}2\pi})^m=e^{in2\pi}=1$$
+thus we have:
+$$((3+4i)/5)^m=1$$
+$$(3+4i)^m=5^m$$</p>
+<h3 id="part-2">part 2</h3>
+<p>$$(3+4i)^2=-7+24i\equiv3+4i\mod 5$$
+thus $$(3+4i)^m\equiv3+4i\mod5$$ by induction.</p>
+<p>By contradiction, there&rsquo;s no $m$ can satisfy both. $\theta$ can not be a rational multiple of $2\pi$. $\theta$ is a irrational multiple of $2\pi$</p>
+<h1 id="section-47">Section 4.7</h1>
+<h2 id="ex-447">ex 4.47</h2>
+<p>$$\begin{align}
+e^{i\sum{H_k}t}&amp;=1+i(H_1+\cdots H_k)t-\frac{(H_1+\cdots H_k)^2}{2}t^2-i\frac{(H_1+\cdots H_k)^3}{6}t^3+\cdots\\
+&amp;=1+i(H_1+\cdots H_k)t-\frac{\sum{H_k^2}+\sum_{i,j;i\neq j}{(H_iH_j+H_jH_i)}}{2}t^2+\cdots\\
+e^{iH_jt}&amp;=1+iH_jt-\frac{H_j^2}{2}t^2-i\frac{H_j^3}{6}t^3+\cdots\\
+e^{iH_kt}&amp;=1+iH_kt-\frac{H_k^2}{2}t^2-i\frac{H_k^3}{6}t^3+\cdots
+\end{align}$$</p>
+<p>Thus:</p>
+<p>$$\begin{align}
+e^{iH_jt}*e^{iH_kt}=1+i(H_j+H_k)t-\frac{\sum{H_k^2}+2H_jH_k}{2}t^2+\cdots
+\end{align}$$</p>
+<p>When $e^{iHt}=\prod_k{e^{iH_kt}}$, by comparing the coefficient of $t^2$, we have</p>
+<p>$$\begin{align}
+H_jH_k+H_kH_j&amp;=2H_jH_k\\
+[H_j,H_k]&amp;=0
+\end{align}$$</p>
+<h2 id="ex-448">ex 4.48</h2>
+<p>Involving at most $c$ particles means that the number of $H_k$ is at most $C_c^n$ which is $O(n^c)$, a polynomial in $n$.</p>
+<h2 id="ex-449">ex 4.49</h2>
+<p>$e^{(A+B)\Delta t}=1+(A+B)\Delta t+\frac{(A+B)^2}{2}\Delta t^2+O(\Delta t^3)$</p>
+<p>$e^{A\Delta t}=1+A\Delta t+{A^2\over2}\Delta t^2+O(\Delta t^3)$
+$e^{B\Delta t}=1+B\Delta t+{B^2\over2}\Delta t^2+O(\Delta t^3)$
+$e^{-{1\over2}[A,B]\Delta t ^2}=1-{1\over2}[A,B]\Delta t ^2+O(\Delta t^4)$</p>
+<p>Thus</p>
+<p>$$\begin{align}
+e^{A\Delta t}&amp;e^{B\Delta t}e^{-{1\over2}[A,B]\Delta t ^2} \\
+&amp;=1+(A+B)\Delta t+(A^2/2+B^2/2+AB-[A,B]/2)+O(\Delta t^3) \\
+&amp;=1+(A+B)\Delta t+{1\over2}(A^2+B^2+AB+BA)\Delta t^2+O(\Delta t^3) \\
+&amp; =1+(A+B)\Delta t+{(A+B^2)\over2}\Delta t^2+O(\Delta t^3)
+\end{align}$$</p>
+<p>Hence</p>
+<p>$$e^{(A+B)\Delta t}=e^{A\Delta t}e^{B\Delta t}e^{-{1\over2}[A,B]\Delta t ^2}+O(\Delta t^3)$$</p>
+<h2 id="ex-450">ex 4.50</h2>
+<h3 id="part-a">part a.</h3>
+<p>$$\begin{align}
+U_{\Delta t}=1
+&amp;-2i(H_1+\cdots H_L)\Delta t\\
+&amp;-\left[\left({\sum_{i=1}^n{H_i^2}+2\sum_{i,j,i\neq j}{H_iH_j}}\right)+\sum_{i=1}^n{H_i^2}\right]\Delta t^2+O(\Delta t^3) \\
+&amp; = 1-2i(H_1+\cdots H_L)\Delta t-2\left({\sum_{i=1}^n{H_i^2}+\sum_{i,j,i\neq j}{H_iH_j}}\right)\Delta t^2+O(\Delta t^3) \\
+&amp; = 1-2iH\Delta t-{(2H)^2\over2!}\Delta t^2 + O(\Delta t^3)
+\end{align}$$</p>
+<p>Thus</p>
+<p>$$U_{\Delta t}-e^{-2iH\Delta t}=O(\Delta t^3)$$</p>
+<p>$$U_{\Delta t}=e^{-2iH\Delta t}+O(\Delta t^3)$$</p>
+<h3 id="part-b">part b.</h3>
+<p>$$\begin{align}
+E(U_{\Delta t}^m,e^{-2miH\Delta t})
+&amp; \le mE(U_{\Delta t},e^{-2iH\Delta t}) \\
+&amp; = m\cdot O(\Delta t^3)\\
+&amp; = m\alpha \Delta t^3
+\end{align}$$</p>
+<p>for some $\alpha$.</p>
+<h1 id="end-of-chapter-4">End of chapter 4</h1>
+<h2 id="problem-43">Problem 4.3</h2>
+<h3 id="1">(1)</h3>
+<p>Since $U$ is a unitary, all the eigenvalues have norm equal to $1$.</p>
+<p>$$U = \sum_{k=0}^{2^n-1}{e^{-i\theta_k} \ket{k} \bra k}, \quad \theta_k \in[0,2\pi)$$</p>
+<p>thus</p>
+<p>$$H \equiv i\ln{(U)}=\sum{ \theta_k \ket{k} \bra{k} }$$</p>
+<h3 id="2">(2)</h3>
+<h4 id="general-idea">general idea</h4>
+<p>First, define</p>
+<p>$$\mathbf{H}\equiv {H\vert H:2^n\times 2^n \text{ Hermitian}}$$</p>
+<p>$$\mathbf{P_n} \equiv {I,X,Y,Z}^{\otimes n}$$</p>
+<p>The idea is that $\mathbf{H}$ has $(2^n)^2$ degrees of freedom and $\mathbf{P_n}$ has $4^n = (2^n)^2$ number of elements. Then, if we can prove $\bf{H}$ is a vector space and $\bf{P_n}$ is a basis for $\bf{H}$, then it is obvious that for any $H \in \bf H$ it can be written as $H = \sum_g{h_g g},\quad g\in\bf{P_n}$.</p>
+<h4 id="step-1">step 1</h4>
+<p>To prove $\bf{H}$ is a vector space, we can see that  $\bf H \subset \bf M$, where $\bf M$ is a vector space which contains all matrices. $\bf H$ is a subspace of $\bf M$. By checking that:</p>
+<ul>
+<li>$\bf 0\in H$</li>
+<li>closure under $+$: for $h_1, h_2\in \bf H$, $(h_1+h_2)^\dagger = h_1^\dagger+h_2^\dagger=(h_1+h_2), (h_1+h_2)\in \bf H$ by definition of Hermitian.</li>
+<li>closure under scalar $*$: $h\in \mathbf{H} \implies ah\in \mathbf H$</li>
+</ul>
+<p>$\mathbf H$ is a vector space.</p>
+<h4 id="step-2">step 2</h4>
+<p>To prove $\bf{P_n}$ is a basis, fortunately, we can easily prove that all the elements in $\bf{P_n}$ are linearly independent to each other by showing that they are orthogonal.</p>
+<p>we use the matrix inner prouct:</p>
+<p>$$\left&lt;A,B\right&gt;\equiv tr(A^\dagger B)$$</p>
+<p>When $n=1$, which is $$\mathbf{P_1}={I,X,Y,Z}$$, for any two elements $\sigma_1,\sigma_2 \in \mathbf{P_1}$. we can confirm that $\left&lt;\sigma_1,\sigma_2\right&gt;=0$ for $\sigma_1\neq \sigma_2$.</p>
+<p>When $n&gt;1$, for $g_1,g_2\in \mathbf{P_n}$ we can write them as:
+$$\begin{align}
+g_1 &amp; =\bigotimes_{i=0}^{n-1}{\sigma_{x_i}},\sigma_{x_i}\in{I,X,Y,Z} \\
+g_2 &amp; =\bigotimes_{i=0}^{n-1}{\sigma_{y_i}},\sigma_{y_i}\in{I,X,Y,Z}
+\end{align}$$
+Then
+$$\begin{align}
+\left&lt;g_1,g_2\right&gt; &amp; = \text{tr}(g_1^{\dagger} g_2) \\
+&amp; = \text{tr}\left(\bigotimes_{i=0}^{n-1}{\sigma_{x_i}^\dagger}\bigotimes_{i=0}^{n-1}{\sigma_{y_i}}\right) \\
+&amp; = \text{tr}\left(\bigotimes_{i=0}^{n-1}{\sigma_{x_i}^\dagger\sigma_{y_i}}\right) \\
+&amp; = \prod_{i=0}^{n-1}{\left&lt;\sigma_{x_i},\sigma_{y_i}\right&gt;}
+\end{align}$$</p>
+<p>It is clear that, $\left&lt;g_1,g_2\right&gt;\neq0$ only when $\forall i, \sigma_{x_i}=\sigma_{y_i}$, which is $g_1=g_2$. Thus for any two distinctive elements in $\mathbf{P_n}$, their inner product is $0$.</p>
+<h4 id="finalizing-the-proof">finalizing the proof</h4>
+<p>Since $\mathbf{H}$ is a vector space with $\text{dim}(\mathbf{H})=\vert{\mathbf{P_n}}\vert=4^n$ , $\mathbf{P_n}\subset\mathbf{H}$ and all the elements in $\mathbf{P_n}$ are orthogonal  thus linearly independent, $\mathbf{P_n}$ is a basis for $\mathbf{H}$. For any $H \in \bf H$ it can be written as $H = \sum_g{h_g g},\quad h_g \in \Re, g\in\bf{P_n}$.</p>
+<h3 id="3">(3)</h3>
+<p>$$\exp{(-ih_gg\Delta)}=\exp{(-i{h_g\over k}\bigotimes_{i=0}^{n-1}{\sigma_{i}})}$$</p>
+<p>Based on the method and circuit proposed in section 4.7.3, we replace $\Delta t$ with $h_g/k$. Then for the $i$-th qubit, if $\sigma_i=I$, we remove the $\text{CNOT}$ gates; if $\sigma_i=X$, we add $H$ both before and after the $\text{CNOT}$ gates; if $\sigma_i=Y$, we add $U_3(\pi /2,\pi /2,\pi /2)$ before the $\text{CNOT}$s and $U_3(-\pi /2,\pi /2,\pi /2)$ after the $\text{CNOT}$s; if $\sigma_i=Z$, there should be only $\text{CNOT}$s. There&rsquo;re at most $4$ gates on a single wire. Thus the construction takes $\text{O}(n)$ number of one and two qubit gates.</p>
+<h3 id="4">(4)</h3>
+<p>$$\begin{align}
+\exp{(-iH\Delta)} &amp; = \exp{(-i\sum_g{h_g g}\Delta)}
+\end{align}$$</p>
+<p>Using equation $(4.103)$ in chapter 4 and split the summation into $4^n$ terms:
+$$\exp{(-i\sum_g{h_g g}\Delta)}=\prod_g{}\exp{(-ih_gg\Delta)}+\text{O}(4^n\Delta^2)$$</p>
+<h3 id="5">(5)</h3>
+<p>Sicne $H \equiv i\ln{(U)}$,</p>
+<p>$$\begin{align}
+U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
+&amp; = \left(\exp{(-i\sum_g{h_g g}\Delta)}\right)^k \\
+&amp; = \left(\exp{(-i\sum_g{h_g g}\Delta)}\right)^{k-1}\cdot\prod_g{}\exp{(-ih_gg\Delta)}+\text{O}(4^n\Delta^2) \\
+&amp; = \left[\prod_g{}\exp{(-ih_gg\Delta)}\right]^k+k\cdot\text{O}(4^n\Delta^2) \\
+&amp; = \left[\prod_g{}\exp{(-ih_gg\Delta)}\right]^k+\text{O}(4^n\Delta)
+\end{align}$$</p>
+<h3 id="6">(6)</h3>
+<p>To be within a distance $\epsilon&gt;0$, $\text{O}(4^n\Delta)&lt;\epsilon$, thus $k=\text{O}(4^n/\epsilon)$. We know that each $\exp{(-ih_gg\Delta)}$ requires $\text{O}{(n)}$ gatesto construct. Hence, $U$ requires $\vert \mathbf{P_n}\equiv{g}\vert\cdot k\cdot\text{O}(n)=\text{O}(n16^n/\epsilon)$</p>
+
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="mailto:xtong2@hotmail.com" target="_blank"><span>Email</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/quantum-computing/">Quantum Computing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/textbook-solution/">Textbook Solution</a>
+            </span>
+            
+        </div>
+    </div>
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#ex-420">ex 4.20</a></li>
+    <li><a href="#ex-421">ex 4.21</a></li>
+    <li><a href="#ex-422">ex 4.22</a>
+      <ul>
+        <li><a href="#step1---substitution">step1 - substitution</a></li>
+        <li><a href="#step2---simplification">step2 - simplification</a></li>
+        <li><a href="#result">Result</a></li>
+      </ul>
+    </li>
+    <li><a href="#ex-427">ex 4.27</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#ex-436">ex 4.36</a></li>
+    <li><a href="#ex-440">ex 4.40</a></li>
+    <li><a href="#ex-441">ex 4.41</a></li>
+    <li><a href="#ex-442">ex 4.42</a>
+      <ul>
+        <li><a href="#part-1">part 1</a></li>
+        <li><a href="#part-2">part 2</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#ex-447">ex 4.47</a></li>
+    <li><a href="#ex-448">ex 4.48</a></li>
+    <li><a href="#ex-449">ex 4.49</a></li>
+    <li><a href="#ex-450">ex 4.50</a>
+      <ul>
+        <li><a href="#part-a">part a.</a></li>
+        <li><a href="#part-b">part b.</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#problem-43">Problem 4.3</a>
+      <ul>
+        <li><a href="#1">(1)</a></li>
+        <li><a href="#2">(2)</a></li>
+        <li><a href="#3">(3)</a></li>
+        <li><a href="#4">(4)</a></li>
+        <li><a href="#5">(5)</a></li>
+        <li><a href="#6">(6)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>Pages</h3>
+        <ul>
+            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/search/">Search</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>Links</h3>
+        <ul>
+            
+            <li>
+                <a href="mailto:xtong2@hotmail.com" target="_blank"><span>Email</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>Tags</h3>
+        <div>
+            
+            <span>
+                <a href="/tags/quantum-computing/">Quantum Computing</a>
+            </span>
+            
+            <span>
+                <a href="/tags/textbook-solution/">Textbook Solution</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="sidebar-item sidebar-toc">
+        <h3>Table of Contents</h3>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#ex-420">ex 4.20</a></li>
+    <li><a href="#ex-421">ex 4.21</a></li>
+    <li><a href="#ex-422">ex 4.22</a>
+      <ul>
+        <li><a href="#step1---substitution">step1 - substitution</a></li>
+        <li><a href="#step2---simplification">step2 - simplification</a></li>
+        <li><a href="#result">Result</a></li>
+      </ul>
+    </li>
+    <li><a href="#ex-427">ex 4.27</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#ex-436">ex 4.36</a></li>
+    <li><a href="#ex-440">ex 4.40</a></li>
+    <li><a href="#ex-441">ex 4.41</a></li>
+    <li><a href="#ex-442">ex 4.42</a>
+      <ul>
+        <li><a href="#part-1">part 1</a></li>
+        <li><a href="#part-2">part 2</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#ex-447">ex 4.47</a></li>
+    <li><a href="#ex-448">ex 4.48</a></li>
+    <li><a href="#ex-449">ex 4.49</a></li>
+    <li><a href="#ex-450">ex 4.50</a>
+      <ul>
+        <li><a href="#part-a">part a.</a></li>
+        <li><a href="#part-b">part b.</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#problem-43">Problem 4.3</a>
+      <ul>
+        <li><a href="#1">(1)</a></li>
+        <li><a href="#2">(2)</a></li>
+        <li><a href="#3">(3)</a></li>
+        <li><a href="#4">(4)</a></li>
+        <li><a href="#5">(5)</a></li>
+        <li><a href="#6">(6)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2020-2022
+                <a href="https://xin-0.github.io/">Xin Tong</a>
+                 | <a href="https://github.com/xin-0/xin-0.github.io">Source code</a> 
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+<script defer src="/assets/js/fuji.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"></script>
+<script>
+  renderMathInElement(document.querySelector('div.content'), {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '\\[', right: '\\]', display: true },
+      { left: '$', right: '$', display: false },
+      { left: '\\(', right: '\\)', display: false },
+    ],
+  });
+</script>
+
+
+
+
+</body>
+
+</html>

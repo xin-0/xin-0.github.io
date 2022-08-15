@@ -122,9 +122,10 @@ $$\begin{align} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{
     <div class="post-content markdown-body">
         <p>Personal solution to the book <em>Quantum Computation and Quantum Information</em> by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.</p>
 <p>Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.</p>
-<h1 id="section-43">Section 4.3</h1>
-<h2 id="summary">Summary</h2>
-<h2 id="ex-420">ex 4.20</h2>
+<h2 id="section-43">Section 4.3</h2>
+<h3 id="summary">Summary</h3>
+<h3 id="ex-420">ex 4.20</h3>
+<hr>
 <p>Since</p>
 <p>$$
 H\otimes H = {1\over \sqrt 2}
@@ -136,7 +137,8 @@ Also using identity: $HXH=Z$, we have</p>
 H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; =  {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\
 &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10
 \end{align}$$</p>
-<h2 id="ex-421">ex 4.21</h2>
+<h3 id="ex-421">ex 4.21</h3>
+<hr>
 <p>Circuit on the left:
 $$\text{left} : C^2(U)=\begin{bmatrix}I \\ &amp; I \\ &amp; &amp; I \\ &amp; &amp; &amp; U \end{bmatrix}$$
 Using $VV^\dagger=V^\dagger V=I$ and $V^2=U$ we have:</p>
@@ -145,15 +147,16 @@ Using $VV^\dagger=V^\dagger V=I$ and $V^2=U$ we have:</p>
 &amp; = \begin{bmatrix} I \\ &amp; I \\ &amp; &amp; I \\ &amp; &amp; &amp; U \end{bmatrix}
 \end{align}$$
 $\text{left = right}$</p>
-<h2 id="ex-422">ex 4.22</h2>
-<h3 id="step1---substitution">step1 - substitution</h3>
+<h3 id="ex-422">ex 4.22</h3>
+<hr>
+<h4 id="step1---substitution">step1 - substitution</h4>
 <p>Use decomposition $U=e^{i\alpha}AXBXC$ to replace $c\text{-}V$ and $c\text{-}V^\dagger$ with correponding decompositions.
 Note that, if $V=e^{i\alpha}AXBXC$, then</p>
 <p>$$V^\dagger=(e^{i\alpha}AXBXC)^\dagger=C^\dagger X B^\dagger XA^\dagger e^{-i\alpha}$$</p>
 <p>By substituting $c\text{-}V$ and $c\text{-}V^\dagger$, we have</p>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_1.jpeg" alt="ex4-22-1" />
 </p>
-<h3 id="step2---simplification">step2 - simplification</h3>
+<h4 id="step2---simplification">step2 - simplification</h4>
 <p>Use $AA^\dagger=C^\dagger C=I$ to simplify the circuit:</p>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_2.jpeg" alt="ex4-22-2" />
 </p>
@@ -163,19 +166,22 @@ Note that, if $V=e^{i\alpha}AXBXC$, then</p>
 <p>and</p>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_4.jpeg" alt="ex4-22-4 @2x" />
 </p>
-<h3 id="result">Result</h3>
+<h4 id="result">Result</h4>
 <p>The final design with 8 one-bit gates and 6 CNOTs for $C^2(U)$ is:</p>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-22_5.jpeg" alt="ex4-22-5" />
 </p>
-<h2 id="ex-427">ex 4.27</h2>
+<h3 id="ex-427">ex 4.27</h3>
+<hr>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-27.jpeg" alt="ex4-27" />
 </p>
-<h1 id="section-45">Section 4.5</h1>
-<h2 id="ex-436">ex 4.36</h2>
+<h2 id="section-45">Section 4.5</h2>
+<h3 id="ex-436">ex 4.36</h3>
+<hr>
 <p>First two qubits represent x and last two qubits represent y</p>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-36.jpeg" alt="ex4-36" />
 </p>
-<h2 id="ex-440">ex 4.40</h2>
+<h3 id="ex-440">ex 4.40</h3>
+<hr>
 <p>By definition:</p>
 <p>$$\begin{align}
 E(R_{\hat n}(\alpha),R_{\hat n}(\alpha+\beta))
@@ -185,7 +191,8 @@ E(R_{\hat n}(\alpha),R_{\hat n}(\alpha+\beta))
 \end{align}$$</p>
 <p>Geometrically, the maximum is acheived when $\ket \phi\perp\hat n$, then $R_{\hat n}(\beta)$ is a 2D rotation on a unit circle with angle $\beta/2$. The value of the maximum is the norm of the cord facing the $\beta/2$ angle. Thus:</p>
 <p>$$E(R_{\hat n}(\alpha),R_{\hat n}(\alpha+\beta))=\max_{\ket\phi}{\Vert{(I-R_{\hat n}(\beta))\ket\phi}\Vert}=\vert{1-e^{i\beta/2}}\vert$$</p>
-<h2 id="ex-441">ex 4.41</h2>
+<h3 id="ex-441">ex 4.41</h3>
+<hr>
 <p>$$\begin{align}
 \ket{00\psi} &amp; \xrightarrow{H} {1\over2}(\ket{00}+\ket{01}+\ket{10}+\ket{11})\ket\psi \\
 &amp; \xrightarrow{Toffoli,S}{1\over2}(\ket{00}S\ket\psi+\ket{01}S\ket\psi+\ket{10}S\ket\psi+\ket{11}SX\ket\psi) \\
@@ -218,8 +225,9 @@ $$</p>
 <p>Which is
 $$\ket{00}R_z(\theta)\ket\psi$$
 with $\cos{\theta}={3/5}$.</p>
-<h2 id="ex-442">ex 4.42</h2>
-<h3 id="part-1">part 1</h3>
+<h3 id="ex-442">ex 4.42</h3>
+<hr>
+<h4 id="part-1">part 1</h4>
 <p>if $\theta$ is a rational multiple of $2\pi$, assume
 $$\theta={n\over m}\cdot2\pi$$
 where $p$ and $q$ are co-prime, then
@@ -227,12 +235,13 @@ $$(e^{i\theta})^m=((3+4i)/5)^m=(e^{i{n\over m}2\pi})^m=e^{in2\pi}=1$$
 thus we have:
 $$((3+4i)/5)^m=1$$
 $$(3+4i)^m=5^m$$</p>
-<h3 id="part-2">part 2</h3>
+<h4 id="part-2">part 2</h4>
 <p>$$(3+4i)^2=-7+24i\equiv3+4i\mod 5$$
 thus $$(3+4i)^m\equiv3+4i\mod5$$ by induction.</p>
 <p>By contradiction, there&rsquo;s no $m$ can satisfy both. $\theta$ can not be a rational multiple of $2\pi$. $\theta$ is a irrational multiple of $2\pi$</p>
-<h1 id="section-47">Section 4.7</h1>
-<h2 id="ex-447">ex 4.47</h2>
+<h2 id="section-47">Section 4.7</h2>
+<h3 id="ex-447">ex 4.47</h3>
+<hr>
 <p>$$\begin{align}
 e^{i\sum{H_k}t}&amp;=1+i(H_1+\cdots H_k)t-\frac{(H_1+\cdots H_k)^2}{2}t^2-i\frac{(H_1+\cdots H_k)^3}{6}t^3+\cdots\\
 &amp;=1+i(H_1+\cdots H_k)t-\frac{\sum{H_k^2}+\sum_{i,j;i\neq j}{(H_iH_j+H_jH_i)}}{2}t^2+\cdots\\
@@ -248,13 +257,15 @@ e^{iH_jt}*e^{iH_kt}=1+i(H_j+H_k)t-\frac{\sum{H_k^2}+2H_jH_k}{2}t^2+\cdots
 H_jH_k+H_kH_j&amp;=2H_jH_k\\
 [H_j,H_k]&amp;=0
 \end{align}$$</p>
-<h2 id="ex-448">ex 4.48</h2>
+<h3 id="ex-448">ex 4.48</h3>
+<hr>
 <p>Involving at most $c$ particles means that the number of $H_k$ is at most $C_c^n$ which is $O(n^c)$, a polynomial in $n$.</p>
-<h2 id="ex-449">ex 4.49</h2>
+<h3 id="ex-449">ex 4.49</h3>
+<hr>
 <p>$e^{(A+B)\Delta t}=1+(A+B)\Delta t+\frac{(A+B)^2}{2}\Delta t^2+O(\Delta t^3)$</p>
-<p>$e^{A\Delta t}=1+A\Delta t+{A^2\over2}\Delta t^2+O(\Delta t^3)$
-$e^{B\Delta t}=1+B\Delta t+{B^2\over2}\Delta t^2+O(\Delta t^3)$
-$e^{-{1\over2}[A,B]\Delta t ^2}=1-{1\over2}[A,B]\Delta t ^2+O(\Delta t^4)$</p>
+<p>$e^{A\Delta t}=1+A\Delta t+{A^2\over2}\Delta t^2+O(\Delta t^3)$</p>
+<p>$e^{B\Delta t}=1+B\Delta t+{B^2\over2}\Delta t^2+O(\Delta t^3)$</p>
+<p>$e^{-{1\over2}[A,B]\Delta t ^2}=1-{1\over2}[A,B]\Delta t ^2+O(\Delta t^4)$</p>
 <p>Thus</p>
 <p>$$\begin{align}
 e^{A\Delta t}&amp;e^{B\Delta t}e^{-{1\over2}[A,B]\Delta t ^2} \\
@@ -264,8 +275,9 @@ e^{A\Delta t}&amp;e^{B\Delta t}e^{-{1\over2}[A,B]\Delta t ^2} \\
 \end{align}$$</p>
 <p>Hence</p>
 <p>$$e^{(A+B)\Delta t}=e^{A\Delta t}e^{B\Delta t}e^{-{1\over2}[A,B]\Delta t ^2}+O(\Delta t^3)$$</p>
-<h2 id="ex-450">ex 4.50</h2>
-<h3 id="part-a">part a.</h3>
+<h3 id="ex-450">ex 4.50</h3>
+<hr>
+<h4 id="part-a">part a.</h4>
 <p>$$\begin{align}
 U_{\Delta t}=1
 &amp;-2i(H_1+\cdots H_L)\Delta t\\
@@ -276,7 +288,7 @@ U_{\Delta t}=1
 <p>Thus</p>
 <p>$$U_{\Delta t}-e^{-2iH\Delta t}=O(\Delta t^3)$$</p>
 <p>$$U_{\Delta t}=e^{-2iH\Delta t}+O(\Delta t^3)$$</p>
-<h3 id="part-b">part b.</h3>
+<h4 id="part-b">part b.</h4>
 <p>$$\begin{align}
 E(U_{\Delta t}^m,e^{-2miH\Delta t})
 &amp; \le mE(U_{\Delta t},e^{-2iH\Delta t}) \\
@@ -284,20 +296,21 @@ E(U_{\Delta t}^m,e^{-2miH\Delta t})
 &amp; = m\alpha \Delta t^3
 \end{align}$$</p>
 <p>for some $\alpha$.</p>
-<h1 id="end-of-chapter-4">End of chapter 4</h1>
-<h2 id="problem-43">Problem 4.3</h2>
-<h3 id="1">(1)</h3>
+<h2 id="end-of-chapter-4">End of chapter 4</h2>
+<h3 id="problem-43">Problem 4.3</h3>
+<hr>
+<h4 id="1">(1)</h4>
 <p>Since $U$ is a unitary, all the eigenvalues have norm equal to $1$.</p>
 <p>$$U = \sum_{k=0}^{2^n-1}{e^{-i\theta_k} \ket{k} \bra k}, \quad \theta_k \in[0,2\pi)$$</p>
 <p>thus</p>
 <p>$$H \equiv i\ln{(U)}=\sum{ \theta_k \ket{k} \bra{k} }$$</p>
-<h3 id="2">(2)</h3>
-<h4 id="general-idea">general idea</h4>
+<h4 id="2">(2)</h4>
+<h5 id="general-idea">general idea</h5>
 <p>First, define</p>
 <p>$$\mathbf{H}\equiv {H\vert H:2^n\times 2^n \text{ Hermitian}}$$</p>
 <p>$$\mathbf{P_n} \equiv {I,X,Y,Z}^{\otimes n}$$</p>
 <p>The idea is that $\mathbf{H}$ has $(2^n)^2$ degrees of freedom and $\mathbf{P_n}$ has $4^n = (2^n)^2$ number of elements. Then, if we can prove $\bf{H}$ is a vector space and $\bf{P_n}$ is a basis for $\bf{H}$, then it is obvious that for any $H \in \bf H$ it can be written as $H = \sum_g{h_g g},\quad g\in\bf{P_n}$.</p>
-<h4 id="step-1">step 1</h4>
+<h5 id="step-1">step 1</h5>
 <p>To prove $\bf{H}$ is a vector space, we can see that  $\bf H \subset \bf M$, where $\bf M$ is a vector space which contains all matrices. $\bf H$ is a subspace of $\bf M$. By checking that:</p>
 <ul>
 <li>$\bf 0\in H$</li>
@@ -305,7 +318,7 @@ E(U_{\Delta t}^m,e^{-2miH\Delta t})
 <li>closure under scalar $*$: $h\in \mathbf{H} \implies ah\in \mathbf H$</li>
 </ul>
 <p>$\mathbf H$ is a vector space.</p>
-<h4 id="step-2">step 2</h4>
+<h5 id="step-2">step 2</h5>
 <p>To prove $\bf{P_n}$ is a basis, fortunately, we can easily prove that all the elements in $\bf{P_n}$ are linearly independent to each other by showing that they are orthogonal.</p>
 <p>we use the matrix inner prouct:</p>
 <p>$$\left&lt;A,B\right&gt;\equiv tr(A^\dagger B)$$</p>
@@ -323,18 +336,18 @@ $$\begin{align}
 &amp; = \prod_{i=0}^{n-1}{\left&lt;\sigma_{x_i},\sigma_{y_i}\right&gt;}
 \end{align}$$</p>
 <p>It is clear that, $\left&lt;g_1,g_2\right&gt;\neq0$ only when $\forall i, \sigma_{x_i}=\sigma_{y_i}$, which is $g_1=g_2$. Thus for any two distinctive elements in $\mathbf{P_n}$, their inner product is $0$.</p>
-<h4 id="finalizing-the-proof">finalizing the proof</h4>
+<h5 id="finalizing-the-proof">finalizing the proof</h5>
 <p>Since $\mathbf{H}$ is a vector space with $\text{dim}(\mathbf{H})=\vert{\mathbf{P_n}}\vert=4^n$ , $\mathbf{P_n}\subset\mathbf{H}$ and all the elements in $\mathbf{P_n}$ are orthogonal  thus linearly independent, $\mathbf{P_n}$ is a basis for $\mathbf{H}$. For any $H \in \bf H$ it can be written as $H = \sum_g{h_g g},\quad h_g \in \Re, g\in\bf{P_n}$.</p>
-<h3 id="3">(3)</h3>
+<h4 id="3">(3)</h4>
 <p>$$\exp{(-ih_gg\Delta)}=\exp{(-i{h_g\over k}\bigotimes_{i=0}^{n-1}{\sigma_{i}})}$$</p>
 <p>Based on the method and circuit proposed in section 4.7.3, we replace $\Delta t$ with $h_g/k$. Then for the $i$-th qubit, if $\sigma_i=I$, we remove the $\text{CNOT}$ gates; if $\sigma_i=X$, we add $H$ both before and after the $\text{CNOT}$ gates; if $\sigma_i=Y$, we add $U_3(\pi /2,\pi /2,\pi /2)$ before the $\text{CNOT}$s and $U_3(-\pi /2,\pi /2,\pi /2)$ after the $\text{CNOT}$s; if $\sigma_i=Z$, there should be only $\text{CNOT}$s. There&rsquo;re at most $4$ gates on a single wire. Thus the construction takes $\text{O}(n)$ number of one and two qubit gates.</p>
-<h3 id="4">(4)</h3>
+<h4 id="4">(4)</h4>
 <p>$$\begin{align}
 \exp{(-iH\Delta)} &amp; = \exp{(-i\sum_g{h_g g}\Delta)}
 \end{align}$$</p>
 <p>Using equation $(4.103)$ in chapter 4 and split the summation into $4^n$ terms:
 $$\exp{(-i\sum_g{h_g g}\Delta)}=\prod_g{}\exp{(-ih_gg\Delta)}+\text{O}(4^n\Delta^2)$$</p>
-<h3 id="5">(5)</h3>
+<h4 id="5">(5)</h4>
 <p>Sicne $H \equiv i\ln{(U)}$,</p>
 <p>$$\begin{align}
 U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
@@ -343,7 +356,7 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
 &amp; = \left[\prod_g{}\exp{(-ih_gg\Delta)}\right]^k+k\cdot\text{O}(4^n\Delta^2) \\
 &amp; = \left[\prod_g{}\exp{(-ih_gg\Delta)}\right]^k+\text{O}(4^n\Delta)
 \end{align}$$</p>
-<h3 id="6">(6)</h3>
+<h4 id="6">(6)</h4>
 <p>To be within a distance $\epsilon&gt;0$, $\text{O}(4^n\Delta)&lt;\epsilon$, thus $k=\text{O}(4^n/\epsilon)$. We know that each $\exp{(-ih_gg\Delta)}$ requires $\text{O}{(n)}$ gatesto construct. Hence, $U$ requires $\vert \mathbf{P_n}\equiv{g}\vert\cdot k\cdot\text{O}(n)=\text{O}(n16^n/\epsilon)$</p>
 
     </div>
@@ -402,52 +415,34 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
     <div class="sidebar-item sidebar-toc">
         <h3>Table of Contents</h3><nav id="TableOfContents">
   <ul>
-    <li><a href="#summary">Summary</a></li>
-    <li><a href="#ex-420">ex 4.20</a></li>
-    <li><a href="#ex-421">ex 4.21</a></li>
-    <li><a href="#ex-422">ex 4.22</a>
+    <li><a href="#section-43">Section 4.3</a>
       <ul>
-        <li><a href="#step1---substitution">step1 - substitution</a></li>
-        <li><a href="#step2---simplification">step2 - simplification</a></li>
-        <li><a href="#result">Result</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#ex-420">ex 4.20</a></li>
+        <li><a href="#ex-421">ex 4.21</a></li>
+        <li><a href="#ex-422">ex 4.22</a></li>
+        <li><a href="#ex-427">ex 4.27</a></li>
       </ul>
     </li>
-    <li><a href="#ex-427">ex 4.27</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#ex-436">ex 4.36</a></li>
-    <li><a href="#ex-440">ex 4.40</a></li>
-    <li><a href="#ex-441">ex 4.41</a></li>
-    <li><a href="#ex-442">ex 4.42</a>
+    <li><a href="#section-45">Section 4.5</a>
       <ul>
-        <li><a href="#part-1">part 1</a></li>
-        <li><a href="#part-2">part 2</a></li>
+        <li><a href="#ex-436">ex 4.36</a></li>
+        <li><a href="#ex-440">ex 4.40</a></li>
+        <li><a href="#ex-441">ex 4.41</a></li>
+        <li><a href="#ex-442">ex 4.42</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#ex-447">ex 4.47</a></li>
-    <li><a href="#ex-448">ex 4.48</a></li>
-    <li><a href="#ex-449">ex 4.49</a></li>
-    <li><a href="#ex-450">ex 4.50</a>
+    <li><a href="#section-47">Section 4.7</a>
       <ul>
-        <li><a href="#part-a">part a.</a></li>
-        <li><a href="#part-b">part b.</a></li>
+        <li><a href="#ex-447">ex 4.47</a></li>
+        <li><a href="#ex-448">ex 4.48</a></li>
+        <li><a href="#ex-449">ex 4.49</a></li>
+        <li><a href="#ex-450">ex 4.50</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#problem-43">Problem 4.3</a>
+    <li><a href="#end-of-chapter-4">End of chapter 4</a>
       <ul>
-        <li><a href="#1">(1)</a></li>
-        <li><a href="#2">(2)</a></li>
-        <li><a href="#3">(3)</a></li>
-        <li><a href="#4">(4)</a></li>
-        <li><a href="#5">(5)</a></li>
-        <li><a href="#6">(6)</a></li>
+        <li><a href="#problem-43">Problem 4.3</a></li>
       </ul>
     </li>
   </ul>
@@ -520,52 +515,34 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <h3>Table of Contents</h3>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#summary">Summary</a></li>
-    <li><a href="#ex-420">ex 4.20</a></li>
-    <li><a href="#ex-421">ex 4.21</a></li>
-    <li><a href="#ex-422">ex 4.22</a>
+    <li><a href="#section-43">Section 4.3</a>
       <ul>
-        <li><a href="#step1---substitution">step1 - substitution</a></li>
-        <li><a href="#step2---simplification">step2 - simplification</a></li>
-        <li><a href="#result">Result</a></li>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#ex-420">ex 4.20</a></li>
+        <li><a href="#ex-421">ex 4.21</a></li>
+        <li><a href="#ex-422">ex 4.22</a></li>
+        <li><a href="#ex-427">ex 4.27</a></li>
       </ul>
     </li>
-    <li><a href="#ex-427">ex 4.27</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#ex-436">ex 4.36</a></li>
-    <li><a href="#ex-440">ex 4.40</a></li>
-    <li><a href="#ex-441">ex 4.41</a></li>
-    <li><a href="#ex-442">ex 4.42</a>
+    <li><a href="#section-45">Section 4.5</a>
       <ul>
-        <li><a href="#part-1">part 1</a></li>
-        <li><a href="#part-2">part 2</a></li>
+        <li><a href="#ex-436">ex 4.36</a></li>
+        <li><a href="#ex-440">ex 4.40</a></li>
+        <li><a href="#ex-441">ex 4.41</a></li>
+        <li><a href="#ex-442">ex 4.42</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#ex-447">ex 4.47</a></li>
-    <li><a href="#ex-448">ex 4.48</a></li>
-    <li><a href="#ex-449">ex 4.49</a></li>
-    <li><a href="#ex-450">ex 4.50</a>
+    <li><a href="#section-47">Section 4.7</a>
       <ul>
-        <li><a href="#part-a">part a.</a></li>
-        <li><a href="#part-b">part b.</a></li>
+        <li><a href="#ex-447">ex 4.47</a></li>
+        <li><a href="#ex-448">ex 4.48</a></li>
+        <li><a href="#ex-449">ex 4.49</a></li>
+        <li><a href="#ex-450">ex 4.50</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#problem-43">Problem 4.3</a>
+    <li><a href="#end-of-chapter-4">End of chapter 4</a>
       <ul>
-        <li><a href="#1">(1)</a></li>
-        <li><a href="#2">(2)</a></li>
-        <li><a href="#3">(3)</a></li>
-        <li><a href="#4">(4)</a></li>
-        <li><a href="#5">(5)</a></li>
-        <li><a href="#6">(6)</a></li>
+        <li><a href="#problem-43">Problem 4.3</a></li>
       </ul>
     </li>
   </ul>

@@ -8,17 +8,16 @@
     <language>en</language>
     <lastBuildDate>Sun, 14 Aug 2022 19:09:20 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Quantum Computation and Information chpater 4 solution </title>
+      <title>Quantum Computation and Quantum Information solution - chapter 4</title>
       <link>https://xin-0.github.io/post/qcqi-solution-ch4/</link>
       <pubDate>Sun, 14 Aug 2022 19:09:20 +0800</pubDate>
       
       <guid>https://xin-0.github.io/post/qcqi-solution-ch4/</guid>
       <description>Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp;amp; Isaac L. Chuang, chapter 4.
 Currently under construction. Obviously won&amp;rsquo;t solve them all, but I&amp;rsquo;ll try my best. Open to valuable critics and better solutions.
-Section 4.3 Summary ex 4.20 Since
-$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp;amp; H \\ H &amp;amp; -H \end{bmatrix} $$
-Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
-$$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp;amp; = {1\over2}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;amp;X \end{bmatrix}\begin{bmatrix}H&amp;amp;H \\ H&amp;amp;-H\end{bmatrix} \\ &amp;amp; = \begin{bmatrix}1&amp;amp;0&amp;amp;0&amp;amp;0 \\ 0&amp;amp;0&amp;amp;0&amp;amp;1 \\ 0&amp;amp;0&amp;amp;1&amp;amp;0 \\ 0&amp;amp;1&amp;amp;0&amp;amp;0\end{bmatrix}\equiv CNOT10 \end{align*}$$</description>
+S4.2 Single qubit operations ex 4.2 method 1: use taylor expansion to check left and right are equal.
+method 2: Since the matrix $A$ is involutory, it is non-defective and can be eigen-decomposed with $\pm 1$ eigenvalues. $$ A = P^{-1}SP $$ in which $S$ is a signature matrix (diagonal matrix with $\pm 1$ on diagonal). Then
+$$ \exp(iAx)= P^{-1} \exp(iSx) P $$ For the part in the middle, $\exp(\pm ix)=\cos(x)\pm i\sin(x)$, $\exp(iSx)=\cos(x)I+i\sin(x)S$</description>
     </item>
     
     <item>

@@ -9,14 +9,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.102.0" />
 
 
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
 
 
 
-<title>Quantum Computation and Information chpater 4 solution  - Hilbert Spacecraft</title>
+<title>Quantum Computation and Quantum Information solution - chapter 4 - Hilbert Spacecraft</title>
 
 
 <meta name="author" content="Xin Tong" />
@@ -26,21 +26,19 @@
 <meta name="keywords" content="Quantum Computing, Textbook Solution" />
 
 
-<meta property="og:title" content="Quantum Computation and Information chpater 4 solution " />
-<meta name="twitter:title" content="Quantum Computation and Information chpater 4 solution " />
+<meta property="og:title" content="Quantum Computation and Quantum Information solution - chapter 4" />
+<meta name="twitter:title" content="Quantum Computation and Quantum Information solution - chapter 4" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://xin-0.github.io/post/qcqi-solution-ch4/" /><meta property="og:description" content="Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
 Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
-Section 4.3 Summary ex 4.20 Since
-$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
-Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
-$$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align*}$$" />
+S4.2 Single qubit operations ex 4.2 method 1: use taylor expansion to check left and right are equal.
+method 2: Since the matrix $A$ is involutory, it is non-defective and can be eigen-decomposed with $\pm 1$ eigenvalues. $$ A = P^{-1}SP $$ in which $S$ is a signature matrix (diagonal matrix with $\pm 1$ on diagonal). Then
+$$ \exp(iAx)= P^{-1} \exp(iSx) P $$ For the part in the middle, $\exp(\pm ix)=\cos(x)\pm i\sin(x)$, $\exp(iSx)=\cos(x)I&#43;i\sin(x)S$" />
 <meta name="twitter:description" content="Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
 Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
-Section 4.3 Summary ex 4.20 Since
-$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
-Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
-$$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align*}$$" /><meta property="og:image" content="https://xin-0.github.io/img/og.png" />
+S4.2 Single qubit operations ex 4.2 method 1: use taylor expansion to check left and right are equal.
+method 2: Since the matrix $A$ is involutory, it is non-defective and can be eigen-decomposed with $\pm 1$ eigenvalues. $$ A = P^{-1}SP $$ in which $S$ is a signature matrix (diagonal matrix with $\pm 1$ on diagonal). Then
+$$ \exp(iAx)= P^{-1} \exp(iSx) P $$ For the part in the middle, $\exp(\pm ix)=\cos(x)\pm i\sin(x)$, $\exp(iSx)=\cos(x)I&#43;i\sin(x)S$" /><meta property="og:image" content="https://xin-0.github.io/img/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://xin-0.github.io/img/og.png" /><meta property="article:published_time" content="2022-08-14T19:09:20+08:00" /><meta property="article:modified_time" content="2022-08-14T19:09:20+08:00" />
 
@@ -108,7 +106,7 @@ $$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin
 <article>
     
     <h2 class="post-item post-title">
-        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Information chpater 4 solution </a>
+        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Quantum Information solution - chapter 4</a>
     </h2>
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-08-14</span>
@@ -122,7 +120,97 @@ $$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin
     <div class="post-content markdown-body">
         <p>Personal solution to the book <em>Quantum Computation and Quantum Information</em> by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.</p>
 <p>Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.</p>
-<h2 id="section-43">Section 4.3</h2>
+<h2 id="s42-single-qubit-operations">S4.2 Single qubit operations</h2>
+<h3 id="heading"></h3>
+<h3 id="ex-42">ex 4.2</h3>
+<hr>
+<p><strong>method 1:</strong>
+use taylor expansion to check left and right are equal.</p>
+<p><strong>method 2:</strong>
+Since the matrix $A$ is involutory, it is non-defective and can be eigen-decomposed with $\pm 1$ eigenvalues.
+$$
+A = P^{-1}SP
+$$
+in which $S$ is a signature matrix (diagonal matrix with $\pm 1$ on diagonal). Then</p>
+<p>$$
+\exp(iAx)= P^{-1} \exp(iSx) P
+$$
+For the part in the middle, $\exp(\pm ix)=\cos(x)\pm i\sin(x)$, $\exp(iSx)=\cos(x)I+i\sin(x)S$</p>
+<p>$$\begin{align*}
+\exp(iAx) &amp; = \cos(x)P^{-1}P+i\sin(x)P^{-1}SP \\
+&amp; = \cos(x)I + i\sin(x)A
+\end{align*}
+$$</p>
+<h3 id="ex-46">ex 4.6</h3>
+<hr>
+<p>$$
+R_{\hat{n}}(\theta) \equiv \exp (-i \theta \hat{n} \cdot \vec{\sigma} / 2)=\cos \left(\frac{\theta}{2}\right) I-i \sin \left(\frac{\theta}{2}\right)\left(n_{x} X+n_{y} Y+n_{z} Z\right)
+$$</p>
+<p>First of all, it is obvoius that $R_{\hat n}(\theta)$ is a unitary, thus norm-preserving, which makes it qualified to be an rotation. Next we want to check the rotation axis is indeed $\hat{n}$, and the rotation angle is $\theta$ around that axis.</p>
+<h4 id="check-rotation-axis">check rotation axis</h4>
+<p>The definition of $R_{\hat{n}}(\theta)$ involves both operators in bloch sphere: $I,X,Y,Z$, and coefficients in 3d cartesian coordiante: $n_x, n_y, n_z$. We can&rsquo;t use it before we transform it into a valid operation in one of the two coordinate systems.</p>
+<p>Since $\hat{n}$ is a unit vector, we can regard it as a state vector on the bloch sphere representing the state:
+$$
+\ket{n} = \cos{\alpha\over2}\ket{0}+e^{i\phi}\sin{\alpha\over2}\ket{1}
+= \begin{pmatrix}
+\cos{\alpha\over2} \\
+e^{i\phi}\sin{\alpha\over2}
+\end{pmatrix}
+$$</p>
+<p>then its cartesian coordiante is</p>
+<p>$$
+\hat{n} =
+\begin{pmatrix}
+\sin{\alpha}\cos{\phi} \\
+\sin{\alpha}\sin{\phi} \\
+\cos{\alpha}
+\end{pmatrix}
+$$</p>
+<p>with $n_x = \sin{\alpha}\cos{\phi}$, $n_y = \sin{\alpha}\sin{\phi}$ and $n_z = \cos{\alpha}$, we can get
+$$
+R_{\hat{n}}(\theta) =
+\begin{bmatrix}
+\cos{\theta\over 2} - i\sin{\theta\over2}\cos{\alpha} &amp; -i\sin{\theta\over 2}\sin{\alpha}\cdot e^{-i\phi} \\
+-i\sin{\theta\over2}\sin{\alpha}\cdot e^{i\phi} &amp; \cos{\theta\over 2} + i\sin{\theta\over2}\cos{\alpha}
+\end{bmatrix}
+$$</p>
+<p>Then we do eigen-decoposition to check $\ket{n}$ is the rotation axis, the eigenvalue-eigenvector pairs are:
+$$\begin{align*}
+&amp; e^{i{\theta\over2}},\quad
+\begin{pmatrix}
+\sin{\alpha\over2} \\
+-e^{i\phi}\cos{\alpha\over2}
+\end{pmatrix} \\
+&amp; e^{-i{\theta\over2}},\quad
+\begin{pmatrix}
+\cos{\alpha\over2} \\
+e^{i\phi}\sin{\alpha\over2}
+\end{pmatrix}
+\end{align*}$$</p>
+<p>It is clear that $\ket{n}$ is one of the eigen-vector as we expected. The another eigenvector on the bloch sphere is in the opposite direction of $\ket{n}$ and is orthogonal to $\ket{n}$. We can name it $\ket{n_\perp}$.</p>
+<h4 id="check-rotation-angle">check rotation angle</h4>
+<p>$\ket{n}$ and  $\ket{n_\perp}$ form a basis in bloch sphere. Thus any state vector can be written in this basis. Let</p>
+<p>$$
+\ket{\lambda} = a\ket{n}+b\ket{n_\perp}
+$$</p>
+<p>Then
+$$\begin{align*}
+R_{\hat{n}}(\theta)\ket{\lambda}
+&amp; = \begin{bmatrix} e^{-i{\theta\over2}} &amp; \\ &amp; e^{i{\theta\over2}} \end{bmatrix}\begin{bmatrix} a \\ b \end{bmatrix} \\
+&amp; = e^{-i{\theta\over2}}\begin{bmatrix} 1 &amp; \\ &amp; e^{i{\theta}} \end{bmatrix}\begin{bmatrix} a \\ b \end{bmatrix}
+\end{align*}$$</p>
+<p>In the eigenspace of $R_{\hat{n}}(\theta)$, $\ket{\lambda}$ gains a phase rotation of angle $\theta$ with a global phase $ e^{-i{\theta\over2}}$. In other words, $R_{\hat{n}}(\theta)$ rotate $\ket{\lambda}$ angle $\theta$ around axis $\hat{n}$.</p>
+<h3 id="ex-47">ex 4.7</h3>
+<hr>
+<p>$$\begin{align*}
+XR_y(\theta)X &amp; = X e^{-i\theta/2Y}X \\
+&amp; = X(\cos(\theta/2)I+i\sin(\theta/2)Y)X \\
+&amp; = \cos(\theta/2)X^2+i\sin(\theta/2)XYX \\
+&amp; = \cos(\theta/2)I-i\sin(\theta/2)Y \\
+XR_y(\theta)X &amp; = R_y(-\theta)
+\end{align*}
+$$</p>
+<h2 id="s43-controlled-operations">S4.3 Controlled operations</h2>
 <h3 id="summary">Summary</h3>
 <h3 id="ex-420">ex 4.20</h3>
 <hr>
@@ -174,7 +262,8 @@ Note that, if $V=e^{i\alpha}AXBXC$, then</p>
 <hr>
 <p><img class="img-zoomable" src="/img/qcqi-solution-ch4/ex4-27.jpeg" alt="ex4-27" />
 </p>
-<h2 id="section-45">Section 4.5</h2>
+<h2 id="s44-measurement">S4.4 Measurement</h2>
+<h2 id="s45-universal-quantum-gates">S4.5 Universal quantum gates</h2>
 <h3 id="ex-436">ex 4.36</h3>
 <hr>
 <p>First two qubits represent x and last two qubits represent y</p>
@@ -239,7 +328,7 @@ $$(3+4i)^m=5^m$$</p>
 <p>$$(3+4i)^2=-7+24i\equiv3+4i\mod 5$$
 thus $$(3+4i)^m\equiv3+4i\mod5$$ by induction.</p>
 <p>By contradiction, there&rsquo;s no $m$ can satisfy both. $\theta$ can not be a rational multiple of $2\pi$. $\theta$ is a irrational multiple of $2\pi$</p>
-<h2 id="section-47">Section 4.7</h2>
+<h2 id="s47-simulation-of-quantum-systems">S4.7 Simulation of quantum systems</h2>
 <h3 id="ex-447">ex 4.47</h3>
 <hr>
 <p>$$\begin{align*}
@@ -415,7 +504,15 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
     <div class="sidebar-item sidebar-toc">
         <h3>Table of Contents</h3><nav id="TableOfContents">
   <ul>
-    <li><a href="#section-43">Section 4.3</a>
+    <li><a href="#s42-single-qubit-operations">S4.2 Single qubit operations</a>
+      <ul>
+        <li><a href="#heading"></a></li>
+        <li><a href="#ex-42">ex 4.2</a></li>
+        <li><a href="#ex-46">ex 4.6</a></li>
+        <li><a href="#ex-47">ex 4.7</a></li>
+      </ul>
+    </li>
+    <li><a href="#s43-controlled-operations">S4.3 Controlled operations</a>
       <ul>
         <li><a href="#summary">Summary</a></li>
         <li><a href="#ex-420">ex 4.20</a></li>
@@ -424,7 +521,8 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <li><a href="#ex-427">ex 4.27</a></li>
       </ul>
     </li>
-    <li><a href="#section-45">Section 4.5</a>
+    <li><a href="#s44-measurement">S4.4 Measurement</a></li>
+    <li><a href="#s45-universal-quantum-gates">S4.5 Universal quantum gates</a>
       <ul>
         <li><a href="#ex-436">ex 4.36</a></li>
         <li><a href="#ex-440">ex 4.40</a></li>
@@ -432,7 +530,7 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <li><a href="#ex-442">ex 4.42</a></li>
       </ul>
     </li>
-    <li><a href="#section-47">Section 4.7</a>
+    <li><a href="#s47-simulation-of-quantum-systems">S4.7 Simulation of quantum systems</a>
       <ul>
         <li><a href="#ex-447">ex 4.47</a></li>
         <li><a href="#ex-448">ex 4.48</a></li>
@@ -515,7 +613,15 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <h3>Table of Contents</h3>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#section-43">Section 4.3</a>
+    <li><a href="#s42-single-qubit-operations">S4.2 Single qubit operations</a>
+      <ul>
+        <li><a href="#heading"></a></li>
+        <li><a href="#ex-42">ex 4.2</a></li>
+        <li><a href="#ex-46">ex 4.6</a></li>
+        <li><a href="#ex-47">ex 4.7</a></li>
+      </ul>
+    </li>
+    <li><a href="#s43-controlled-operations">S4.3 Controlled operations</a>
       <ul>
         <li><a href="#summary">Summary</a></li>
         <li><a href="#ex-420">ex 4.20</a></li>
@@ -524,7 +630,8 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <li><a href="#ex-427">ex 4.27</a></li>
       </ul>
     </li>
-    <li><a href="#section-45">Section 4.5</a>
+    <li><a href="#s44-measurement">S4.4 Measurement</a></li>
+    <li><a href="#s45-universal-quantum-gates">S4.5 Universal quantum gates</a>
       <ul>
         <li><a href="#ex-436">ex 4.36</a></li>
         <li><a href="#ex-440">ex 4.40</a></li>
@@ -532,7 +639,7 @@ U=e^{-iH} &amp; =\left(\exp{(-iH\Delta)}\right)^k \\
         <li><a href="#ex-442">ex 4.42</a></li>
       </ul>
     </li>
-    <li><a href="#section-47">Section 4.7</a>
+    <li><a href="#s47-simulation-of-quantum-systems">S4.7 Simulation of quantum systems</a>
       <ul>
         <li><a href="#ex-447">ex 4.47</a></li>
         <li><a href="#ex-448">ex 4.48</a></li>

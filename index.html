@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.102.0" />
 
 
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/dsrkafuu/dsr-cdn-main@1/images/favicons/dsrca.ico" />
@@ -98,7 +98,7 @@
 
 <div class="post">
     <h2 class="post-item post-title">
-        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Information chpater 4 solution </a>
+        <a href="https://xin-0.github.io/post/qcqi-solution-ch4/">Quantum Computation and Quantum Information solution - chapter 4</a>
     </h2>
     <div class="post-item post-meta">
         <span><i class="iconfont icon-today-sharp"></i>&nbsp;2022-08-14</span>
@@ -111,10 +111,9 @@
     <div class="post-item post-summary markdown-body">
         Personal solution to the book Quantum Computation and Quantum Information by Michael A. Nielsen &amp; Isaac L. Chuang, chapter 4.
 Currently under construction. Obviously won&rsquo;t solve them all, but I&rsquo;ll try my best. Open to valuable critics and better solutions.
-Section 4.3 Summary ex 4.20 Since
-$$ H\otimes H = {1\over \sqrt 2} \begin{bmatrix}H &amp; H \\ H &amp; -H \end{bmatrix} $$
-Due to the fact that $H$ is hermitian and unitary, $HH=HH^\dagger=I$. Also using identity: $HXH=Z$, we have
-$$\begin{align*} H\otimes H\cdot CNOT01 \cdot H\otimes H &amp; = {1\over2}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix}\begin{bmatrix}I \\ &amp;X \end{bmatrix}\begin{bmatrix}H&amp;H \\ H&amp;-H\end{bmatrix} \\ &amp; = \begin{bmatrix}1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;1 \\ 0&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;0&amp;0\end{bmatrix}\equiv CNOT10 \end{align*}$$
+S4.2 Single qubit operations ex 4.2 method 1: use taylor expansion to check left and right are equal.
+method 2: Since the matrix $A$ is involutory, it is non-defective and can be eigen-decomposed with $\pm 1$ eigenvalues. $$ A = P^{-1}SP $$ in which $S$ is a signature matrix (diagonal matrix with $\pm 1$ on diagonal). Then
+$$ \exp(iAx)= P^{-1} \exp(iSx) P $$ For the part in the middle, $\exp(\pm ix)=\cos(x)\pm i\sin(x)$, $\exp(iSx)=\cos(x)I+i\sin(x)S$
     </div>
 </div>
 

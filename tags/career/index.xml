@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Career on Hilbert Spacecraft</title>
+    <link>https://xin-0.github.io/tags/career/</link>
+    <description>Recent content in Career on Hilbert Spacecraft</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Sep 2022 22:08:14 +0800</lastBuildDate><atom:link href="https://xin-0.github.io/tags/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QC Learning Resources</title>
+      <link>https://xin-0.github.io/post/qc-resource/</link>
+      <pubDate>Tue, 27 Sep 2022 22:08:14 +0800</pubDate>
+      
+      <guid>https://xin-0.github.io/post/qc-resource/</guid>
+      <description>This article serves as a reference for myself. I also hope it can be helpful for anyone:
+self-studying quantum computation wants to follow academic updates in qc needs career advice learn the theory study resources list maintained by poig on GitHub contains learning material for all levels has links to online textbooks in pdf Simons Institute&amp;rsquo;s YouTube Channel doing interdisciplinary studies including qc regularly updates presentations on cutting edge topics project &amp;amp; research opportunity Unitary Fund provides opportunities to work on a quantum open source project, QuTiP mentored by the core developers for a 3-month period. Quantum Open Source Foundation(qosf) has monthly challenge on their GitHub and also holds Quantum Computing Mentorship Program once or twice every year.</description>
+    </item>
+    
+  </channel>
+</rss>
